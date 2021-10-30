@@ -3,6 +3,7 @@ import icon from '../../assets/icon.svg';
 import './App.css';
 
 const Hello = () => {
+  console.log(process.env);
   return (
     <div>
       <div className="Hello">
@@ -34,6 +35,9 @@ const Hello = () => {
             Donate
           </button>
         </a>
+      </div>
+      <div>
+        {JSON.stringify(process.env)}
       </div>
     </div>
   );
